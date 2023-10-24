@@ -1,0 +1,258 @@
+@font-face {
+    font-family:Sofia;
+    src: url(/fonts/SofiaSansCondensed-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: "Sofia", Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #000;
+    line-height: 1.25em;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+header{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+header h1{
+    color: #000;
+    font-size: 10vw;
+    margin: auto;
+    display: block;
+    position: relative;
+    top:50vh;
+}
+ header h2{
+    color: #000;
+    font-size: 5vw;
+    margin: auto;
+    display: block;
+    position: relative;
+    top:50vh;
+    margin-top: 1em;
+ }
+
+nav ul{
+    display: block;
+    position: fixed;
+    background-color: white;
+    width:100vw;
+    height:2em;
+    top:0;
+    text-align: center;
+    z-index: 10;
+
+}
+ nav li{
+    display: inline-block;
+    margin: 0.5em 10%;
+    max-width: fit-content;
+ }
+/* para já temos o título e o menu de navegação no sítio */
+/* começa me baixo a organização das sections */
+
+section{
+    display: block;
+    position: relative;
+    height: 100vh;
+    margin:0 5vw;
+    font-family: "sofia", Helvetica, sans-serif;
+    overflow:hidden;
+}
+
+ section p{
+    max-width: 50ch;
+    margin: auto;
+    padding-top: 40vh;
+ }
+
+
+ #s1{
+    position: relative;
+    top:100vh;
+ }
+ #s2{
+    position: relative;
+    top:100vh;
+ }
+ #s2{
+    position: relative;
+    top:100vh;
+ }
+ #s3{
+    position: relative;
+    top:100vh;
+ }
+ #s4{
+    position: relative;
+    top:100vh;
+ }
+ #s5{
+    position: relative;
+    top:100vh;
+ }
+ #s6{
+    position: relative;
+    top:100vh;
+ }
+ #s7{
+    position: relative;
+    top:100vh;
+ }
+ #s8{
+    position: relative;
+    top:100vh;
+ }
+ #s9{
+    position: relative;
+    top:100vh;
+ }
+ #s10{
+    position: relative;
+    top:100vh;
+ }
+ #s11{
+    position: relative;
+    top:100vh;
+ }
+ #s12{
+    position: relative;
+    top:100vh;
+ }
+ #s13{
+    position: relative;
+    top:100vh;
+ }
+ #s14{
+    position: relative;
+    top:100vh;
+ }
+ #s15{
+    position: relative;
+    top:100vh;
+ }
+
+ #s16{
+    position: relative;
+    top:100vh;
+ }
+ #s17{
+    position: relative;
+    top:100vh;
+ }
+ #s18{
+    position: relative;
+    top:100vh;
+ }
+ #s19{
+    position: relative;
+    top:100vh;
+ }
+ #s20{
+    position: relative;
+    top:100vh;
+ }
+ #s21{
+    position: relative;
+    top:100vh;
+ }
+ /* o p já está no sítio que quero */
+ /* em baixo vou posicionar os elementos a */
+
+ a{
+    display: inline-block;
+    position: absolute;
+    bottom:-6vh;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 2em;
+    max-width: 30vw;
+    transition: ease-out 0.5s;
+    line-height: normal;
+}
+
+#botao1{
+transform:none;
+position: relative;
+display: block;
+top: 70vh;
+width:15px;
+margin: auto;
+}
+
+#botao1:hover{
+   transform: translateY(0.5em);
+}
+
+a:hover:nth-child(2){
+    transform: translatex(-0.5em);
+    
+}
+
+a:hover:nth-child(3){
+    transform: translatex(0.5em);
+}
+
+
+section :nth-child(2){
+    left:5vw;
+}
+
+section :nth-child(3){
+    right:5vw;
+}
+/* falta-me conseguir alinhar os elementos a ao centro(o texto é para manter alinhamento a esquerda) */
+/* o float é de efeito temporário */
+/* já consegui! em vez de ter um top para empurrar os elementos a para baixo pus a position como absolute e defini o bottom como 0. Depois só tive de dar um valor left ao segundo child de section(primeiro "a") e um valor right ao terceiro chil de section(segundo "a")*/
+
+/* section:active{
+    transform: translateY(50px);
+} */
+/* ^ forte concorrente para o most annoying button ever */
+
+
+
+.reveal{
+    position: relative;
+    transform: translateY(20vh);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  /* depois disto tenho de  */
+
+
+  #cima{
+    display: block;
+    position: relative;
+    border: solid 2px #000;
+    width: 4vw;
+    height: 5vh;
+    padding-top:2vh;
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+    padding-bottom:1.5vh;
+    margin: auto;
+    border-radius: 50px;
+    font-size: 0.75em;
+    line-height:1em ;
+    text-align: center;
+    right: -40vw;
+    top:75vh;
+    transition: transform ease-out 0.5s;
+  }
+
+  #cima:hover{
+   transform: translateY(-0.5em);
+  }
